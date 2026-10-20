@@ -1,31 +1,30 @@
-# Enterprise Expense Management & Authorization System
+# Enterprise Expense Management and Authorization System
 
-A secure, role-based full-stack Java CRUD application that enables employees to submit expense reimbursement requests and empowers authorized managers to view, filter, approve, or deny pending claims. 
+A full-stack Java CRUD application featuring strict backend permission validation leveraging JSON Web Tokens (JWT) to securely authenticate users and dynamically grant management privileges for viewing, filtering, approving, and denying pending reimbursement claims.
 
-## Key Features
+## -- Key Features
 
-* **Role-Based Access Control:** Strict backend permission validation using JSON Web Tokens (JWT) to dynamically grant manager and employee privileges.
-  
-* **Claim Lifecycle Management:** Streamlined system for viewing, filtering, approving, and denying pending reimbursement claims.
-  
-* **Secure Portal Authentication:** Protected portal login to ensure data confidentiality and user accountability.
+*   **Role-Based Security:** Secure employee portal login using JWT-based security tokens to enforce strict backend permission validation.
+*   **Dynamic Claim Lifecycle:** Real-time management privileges for authorized managers to filter, view, approve, and deny pending reimbursement claims.
+*   **Decoupled Architecture:** Clean Separation of Concerns implemented via Model-View-Controller (MVC) architecture and Data Access Objects (DAO).
 
-## Tech Stack & Architecture
+## -- Tech Stack
 
-### Backend Core
+### Frontend
+*   **HTML5 / CSS3** — Structural layout and responsive user portal styling.
+*   **JavaScript (ES6+)** — Dynamic UI rendering and asynchronous API consumption.
 
-* **Framework:** Spring Boot (Java)
-* **API Routing:** Javalin
-* **Architecture Pattern:** Model-View-Controller (MVC) with Data Access Object (DAO) layers
+### Backend Core & Frameworks
+*   **Java** — Core programming language utilizing MVC design patterns.
+*   **Spring Boot** — Enterprise-level application framework and dependency injection.
+*   **Javalin** — Lightweight REST API routing and service calls.
 
-### Security & Data
+### Security & Data Layer
+*   **JSON Web Tokens (JWT)** — Stateless user authentication and authorization.
+*   **PostgreSQL** — Relational database management system for secure data storage.
+*   **Hibernate** — Object-Relational Mapping (ORM) framework for database communication via DAO.
 
-* **Authentication:** JSON Web Tokens (JWT)
-* **Database:** PostgreSQL
-* **ORM / Persistence:** Hibernate
-
-### Dev Tools & Ecosystem
-
-* **Build Automation:** Gradle
-* **Testing Suite:** JUnit, Mockito
-* **Logging & Diagnostics:** Log4j
+### Dev Tools, Testing & Logging
+*   **Gradle** — Automation build tool and dependency management.
+*   **JUnit & Mockito** — Unit testing and mock object framework.
+*   **Log4j** — Application logging, tracking, and debugging.
