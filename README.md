@@ -12,7 +12,7 @@ A full-stack Java CRUD application featuring strict backend permission validatio
 
 ## <-- Tech Stack -->
 
-### Frontend & Client-Side:
+## Frontend & Client-Side:
 
 
 *   **HTML5 / CSS3**: -- Structural layout and responsive user portal styling.
@@ -21,7 +21,7 @@ A full-stack Java CRUD application featuring strict backend permission validatio
   
 
 
-### Backend Core & Frameworks:
+## Backend Core & Frameworks:
 
 
 *   **Java**: --  Core programming language utilizing MVC design patterns.
@@ -32,7 +32,7 @@ A full-stack Java CRUD application featuring strict backend permission validatio
 
 
 
-### Security & Data Layer:
+## Security & Data Layer:
 
 
 *   **JSON Web Tokens (JWT)**: -- Stateless user authentication and authorization.
@@ -43,7 +43,7 @@ A full-stack Java CRUD application featuring strict backend permission validatio
 
   
 
-### Dev Tools, Testing & Logging:
+## Dev Tools, Testing & Logging:
 
 
 *   **Gradle**: -- Automation build tool and dependency management.
