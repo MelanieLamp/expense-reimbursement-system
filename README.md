@@ -5,9 +5,9 @@ A secure, role-based full-stack Java CRUD application that enables employees to 
 ## Key Features
 
 * **Role-Based Access Control:** Strict backend permission validation using JSON Web Tokens (JWT) to dynamically grant manager and employee privileges.
-* 
+  
 * **Claim Lifecycle Management:** Streamlined system for viewing, filtering, approving, and denying pending reimbursement claims.
-* 
+  
 * **Secure Portal Authentication:** Protected portal login to ensure data confidentiality and user accountability.
 
 ## Tech Stack & Architecture
