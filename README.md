@@ -1,5 +1,5 @@
 
-# Enterprise Expense Management and Authorization System
+# Expense Management and Authorization System
 
 
 A full-stack Java CRUD application featuring strict backend permission validation leveraging JSON Web Tokens (JWT) to securely authenticate users and dynamically grant management privileges for viewing, filtering, approving, and denying pending reimbursement claims.
