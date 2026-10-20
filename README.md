@@ -8,17 +8,10 @@ A full-stack Java CRUD application featuring strict backend permission validatio
 ## <-- Key Features -->
 
 
-*   **Role-Based Security**:       Secure employee portal login using JWT-based security tokens to enforce strict backend permission validation.
+*   **Role-Based Security** -- Secure employee portal login using JWT-based security tokens to enforce strict backend permission validation. Real-time management privileges for authorized managers to filter, view, approve, and deny pending reimbursement claims. Clean Separation of Concerns implemented via Model-View-Controller (MVC) architecture and Data Access Objects (DAO).
   
-*   **Dynamic Claim Lifecycle**:   Real-time management privileges for authorized managers to filter, view, approve, and deny pending reimbursement claims.
-  
-*   **Decoupled Architecture**:    Clean Separation of Concerns implemented via Model-View-Controller (MVC) architecture and Data Access Objects (DAO).
-  
-
 
 ## <-- Tech Stack -->
-
-
 
 ### Frontend & Client-Side:
 
