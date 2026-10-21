@@ -31,6 +31,17 @@ A secure, full-stack Java CRUD application that leverages JSON Web Tokens (JWT) 
 * **JUnit & Mockito:** Comprehensive test suite mapping core code paths, mocking layers, and asserting business rules.
 * **Log4j:** Active application logging used for real-time audit trailing, transaction tracking, and debugging.
 
+## 🔒 Security & State Management
+
+To maintain a secure, stateless ecosystem, the frontend handles JWT architecture using modern web application security best practices:
+
+* **Token Storage:** Upon successful authentication via the login endpoint, the issued JWT is securely stored on the client side using **`HttpOnly` Cookies** (or `LocalStorage` depending on your explicit deployment configuration) to shield the application from Cross-Site Scripting (XSS) token theft.
+* **Authorization Headers:** For all subsequent asynchronous CRUD requests (such as fetching or updating reimbursement claims), the client attaches the token as a bearer credential inside the request context:
+  ```http
+  Authorization: Bearer <your_json_web_token>
+  ```
+* **Session Expiration:** The client-side application monitors server responses. If an API endpoint returns a `401 Unauthorized` or `403 Forbidden` status code due to an expired or missing token, the frontend immediately clears the invalid state and routes the user back to the secure portal login screen.
+
 ## ⚙️ Getting Started
 
 ### Prerequisites
