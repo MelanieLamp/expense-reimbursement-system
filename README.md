@@ -24,13 +24,6 @@ A secure, full-stack Java CRUD application that leverages JSON Web Tokens (JWT) 
 | **Javalin** | Lightweight, high-performance web framework handling REST API routing and service endpoints. |
 | **Hibernate** | Enterprise Object-Relational Mapping (ORM) framework bridging the database and DAO layer. |
 
-### Security, Data & DevOps
-* **JSON Web Tokens (JWT):** Secure, stateless tokens used to handle authorization claims securely across layers.
-* **PostgreSQL:** Scalable relational database management system storing employee profile ledgers and claim histories.
-* **Gradle:** Automation build tool ensuring predictable dependency trees and application packaging.
-* **JUnit & Mockito:** Comprehensive test suite mapping core code paths, mocking layers, and asserting business rules.
-* **Log4j:** Active application logging used for real-time audit trailing, transaction tracking, and debugging.
-
 ## 🔒 Security & State Management
 
 To maintain a secure, stateless ecosystem, the frontend handles JWT architecture using modern web application security best practices:
@@ -41,6 +34,13 @@ To maintain a secure, stateless ecosystem, the frontend handles JWT architecture
   Authorization: Bearer <your_json_web_token>
   ```
 * **Session Expiration:** The client-side application monitors server responses. If an API endpoint returns a `401 Unauthorized` or `403 Forbidden` status code due to an expired or missing token, the frontend immediately clears the invalid state and routes the user back to the secure portal login screen.
+
+### Security, Data & DevOps
+* **JSON Web Tokens (JWT):** Secure, stateless tokens used to handle authorization claims securely across layers.
+* **PostgreSQL:** Scalable relational database management system storing employee profile ledgers and claim histories.
+* **Gradle:** Automation build tool ensuring predictable dependency trees and application packaging.
+* **JUnit & Mockito:** Comprehensive test suite mapping core code paths, mocking layers, and asserting business rules.
+* **Log4j:** Active application logging used for real-time audit trailing, transaction tracking, and debugging.
 
 ## ⚙️ Getting Started
 
